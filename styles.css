@@ -1,1 +1,103 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+    
+}
+body {
+    max-width: 935px;
+    min-width: 490px;
+    margin: 10px auto;
+}
+/* Header */
+#colors h2 {
+    
+}
+/* Nav */
 
+/* Sections */
+#colors, #typeface, #textstyles{
+    border: 1px solid black;
+}
+
+#colors div {
+    display: inline-block;
+    border: 1px solid;
+    width: 200px;
+    height: 100px;    
+}
+#colors div p {
+    position: relative;
+    left: 30%;
+    top: 25%;
+    margin: 1px;
+}
+.color1 {
+    background-color: #F5F5F5;
+}
+.color2 {
+    background-color: #EDE7F6;
+}
+.color3 {
+    background-color: #E6E6FA;
+}
+.color4 {
+    background-color: #677657;
+}
+
+/* TYPOGRAPHY */
+#typeface h2 {
+    letter-spacing: .4em;
+}
+#typeface .inter {
+    font-family: 'Inter', sans-serif;
+   
+}
+#typeface .merryweather {
+    font-family: 'Merriweather', serif;
+}
+#typeface .tfname {
+    text-decoration: underline;
+    font-size: 18px;
+}
+#typeface .italic {
+    font-style: italic;
+}
+#typeface .bold {
+    font-weight: bold;
+}
+
+/* TEXT STYLES */
+#textstyles div li{
+    margin-left:30px;
+}
+#textstyles h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+#textstyles .ts {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 25px
+}
+#textstyles .pg {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px
+}
+#sampletext h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+#sampletext h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 25px
+}
+#sampletext p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px
+}
+/* Footer */
