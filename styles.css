@@ -1,0 +1,224 @@
+/* IMPORTS */
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+/* NAV */
+body {
+    background-color: #0c0c0c;
+    min-width: 375px;
+    overflow-x: hidden;
+    
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+    width: 100%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#contact-me-nav a {
+    color: #3C4742;
+    font-weight: 700;
+    text-decoration: underline;
+}
+#contact-me-nav a:hover {
+    color: #62ad8b;
+}
+
+.logo {
+    color: white; /* Text color for dark background */
+    padding: 3px 10px; /* Add some padding for spacing around the text */
+    margin-left: 1rem;
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5rem;
+    transform: color 0.5s ease;
+}
+
+.logo:hover {
+    text-decoration: underline;
+    color: #3C4742;
+}
+
+
+
+.nav-bar {
+ 
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    
+}
+
+.nav-bar li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.5s ease;
+}
+
+.nav-li a:hover {
+    color: #3C4742;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .nav-bar {
+        min-height: 3.5rem;
+    }
+    .nav-bar li a {
+        font-size: 1.8rem;
+    }
+}
+
+/* MAIN */
+.hero-text {
+    height: 100vh;
+    max-width: 100%;
+    margin-top: 3rem;
+    transition: margin-top 0.5s ease;
+}
+
+.hero-text h1 {
+    font-size: 7.5rem;
+    color: whitesmoke;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    transition: font-size 0.5s ease;
+    line-height: 7rem;
+    padding: .5rem;
+
+}
+
+.span-innovative {
+    font-size: 7.5rem;
+    color: #3C4742;
+    font-family: 'Bodoni Moda', serif;
+    line-height: 7rem;
+}
+
+
+@media (min-width: 768px) {
+    .hero-text {
+        margin-top: 20vh;
+        height: 70vh
+    }
+    .hero-text h1 {
+        font-size: 8rem;
+    }
+    .span-innovative {
+        font-size: 8.5rem;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .hero-text {
+        margin-top: 40vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .hero-text h1 {
+        hyphens: none;
+    }
+}
+
+#projects {
+    background-color: #1a1a1a;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+
+/* PROJECTS CSS */
+
+#image-track {
+    user-select: none;
+}
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(0%, -50%);
+    cursor: move;
+    
+}
+#image-track:active {
+    cursor: grabbing;
+}
+
+
+
+
+#projects h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+    color: #3C4742;
+    text-align: center;
+    margin: 3rem;
+    text-transform: uppercase;
+    user-select: none;
+    
+}
+@media (min-width: 768px) {
+    #projects h3 {
+        font-size: 6rem;
+    }
+}
+#projects p {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+/*  CONTACT ME */
+
+#contact-me {
+    height: 100vh;
+}
