@@ -47,4 +47,13 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 });
 
+// MAKE TEXTAREA TALLER AS YOU TYPE 
+
+const textarea = document.getElementById("message");
+
+textarea.addEventListener("input", () => {
+    // Calculate the new height of the textarea based on the content
+    textarea.style.height = "auto";
+    textarea.style.height = textarea.scrollHeight + "px";
+});
 
