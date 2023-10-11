@@ -1,3 +1,18 @@
+// BURGER MENU
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
+
+// PROJECTS SECTION
 document.addEventListener('DOMContentLoaded', function () {
     const track = document.getElementById("image-track");
 
@@ -47,13 +62,18 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 });
 
-// MAKE TEXTAREA TALLER AS YOU TYPE 
+// MAKE SENTENCE SHORTER WHEN SMALLER DEVICE
 
-const textarea = document.getElementById("message");
+function changeTextOnScreenSize() {
+  const paragraph = document.getElementsByClassName("home-p")[0];
+  if (window.innerWidth <= 830) { 
+    paragraph.textContent = "I design digital frameworks and websites, akin to architects creating physical spaces.";
+  } 
+}
 
-textarea.addEventListener("input", () => {
-    // Calculate the new height of the textarea based on the content
-    textarea.style.height = "auto";
-    textarea.style.height = textarea.scrollHeight + "px";
-});
+// Add an event listener to respond to window resize
+window.addEventListener("resize", changeTextOnScreenSize);
+
+// Run the function on page load
+window.addEventListener("load", changeTextOnScreenSize);
 
